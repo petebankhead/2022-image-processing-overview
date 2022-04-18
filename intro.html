@@ -1,0 +1,1371 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image processing glossary &#8212; Image Processing Glossary</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Image Processing Glossary</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
+   Image processing glossary
+  </a>
+ </li>
+</ul>
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="_sources/intro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/petebankhead/image-processing-glossary"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/petebankhead/image-processing-glossary/main?urlpath=tree/./intro.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digital-image-fundamentals">
+   Digital image fundamentals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-image">
+     Digital image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rgb-image">
+     RGB image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-channel-image">
+     Single-channel image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colour-deconvolution">
+     Colour deconvolution
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multichannel-image">
+     Multichannel image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#binary-image">
+     Binary image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#labelled-image">
+     Labelled image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#region-of-interest">
+     Region of interest
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#image-filters">
+   Image filters
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linear-filters">
+     Linear filters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gaussian-filters">
+     Gaussian filters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#non-linear-filters">
+     Non-linear filters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rank-filters">
+     Rank filters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#image-transforms">
+   Image transforms
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distance-transform">
+     Distance transform
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#watershed-transform">
+     Watershed transform
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#composing-workflows">
+   Composing workflows
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Image processing glossary</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digital-image-fundamentals">
+   Digital image fundamentals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-image">
+     Digital image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#example">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rgb-image">
+     RGB image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#single-channel-image">
+     Single-channel image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colour-deconvolution">
+     Colour deconvolution
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multichannel-image">
+     Multichannel image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#binary-image">
+     Binary image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#labelled-image">
+     Labelled image
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#region-of-interest">
+     Region of interest
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id8">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#image-filters">
+   Image filters
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linear-filters">
+     Linear filters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id9">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gaussian-filters">
+     Gaussian filters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id10">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#non-linear-filters">
+     Non-linear filters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rank-filters">
+     Rank filters
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id11">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#image-transforms">
+   Image transforms
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distance-transform">
+     Distance transform
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#watershed-transform">
+     Watershed transform
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id13">
+       Example
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#composing-workflows">
+   Composing workflows
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="image-processing-glossary">
+<h1>Image processing glossary<a class="headerlink" href="#image-processing-glossary" title="Permalink to this headline">¶</a></h1>
+<p>This is a (very) brief glossary of key image processing terms for pathologists interested in digital pathology.</p>
+<p>Here, I have used <a class="reference external" href="https://numpy.org">NumPy</a>, <a class="reference external" href="https://scipy.org">SciPy</a> and <a class="reference external" href="https://scikit-image.org">scikit-image</a> for image processing and <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> for the overall layout.
+The <span class="guilabel">Click to show</span> buttons can be used to view the original Python code used to generate each image.</p>
+<blockquote>
+<div><p>The example Ki67 image is extracted from OS-2.ndpi.
+The original whole slide image is part of the OpenSlide freely-distributed data (<a class="reference external" href="https://openslide.org">https://openslide.org</a>).</p>
+</div></blockquote>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Imports and helper functions used below.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">imageio</span> <span class="kn">import</span> <span class="n">imread</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Iterable</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">ndimage</span>
+<span class="kn">import</span> <span class="nn">skimage</span>
+
+
+<span class="k">def</span> <span class="nf">rescale_percentiles</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">clip_percentile</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Helper function to rescale a single channel image between 0 and 1, clipping by a specified percentile</span>
+<span class="sd">    (both at the upper and lower bound).</span>
+<span class="sd">    This is useful as a contrast adjustment method for an image intended only for display.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">vmin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">clip_percentile</span><span class="p">)</span>
+    <span class="n">vmax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="mi">100</span><span class="o">-</span><span class="n">clip_percentile</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">((</span><span class="n">im</span> <span class="o">-</span> <span class="n">vmin</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">vmax</span> <span class="o">-</span> <span class="n">vmin</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">colorize</span><span class="p">(</span><span class="n">im</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">color</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Helper function to convert a single-channel image into a colorized (RGB) version.</span>
+<span class="sd">    The color is expected to be a tuple with three values between 0 and 1 (for red, green and blue respectively).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_3d</span><span class="p">(</span><span class="n">im</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">color</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">show_images</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">figheight</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">clip_percentile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">do_plot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">n_rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Helper function to plot multiple images in a figure, in a standardized way.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
+    <span class="n">figure</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">figheight</span><span class="o">*</span><span class="n">n</span><span class="p">,</span> <span class="n">figheight</span><span class="p">))</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">n_cols</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="n">n_rows</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">im</span> <span class="ow">in</span> <span class="n">images</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">n_cols</span><span class="p">,</span> <span class="n">counter</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">clip_percentile</span> <span class="ow">and</span> <span class="n">im</span><span class="o">.</span><span class="n">dtype</span> <span class="o">!=</span> <span class="nb">bool</span><span class="p">:</span>
+            <span class="n">vmin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">clip_percentile</span><span class="p">)</span>
+            <span class="n">vmax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="mi">100</span><span class="o">-</span><span class="n">clip_percentile</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">vmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">name</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">do_plot</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+
+<span class="k">def</span> <span class="nf">label2rgb</span><span class="p">(</span><span class="n">labs</span><span class="p">,</span> <span class="n">random_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Wrapper around skimage.color.label2rgb to optionally generate more random colours.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">labs</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">random_colors</span><span class="p">:</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="n">n</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">colors</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">skimage</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">label2rgb</span><span class="p">(</span><span class="n">labs</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    
+    
+<span class="k">def</span> <span class="nf">mark_rois</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">labs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Helper function to mark ROIs on top of an image using the provided labels.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># If we have a binary image, label it first</span>
+    <span class="k">if</span> <span class="n">labs</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="n">labs</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">labs</span><span class="p">)</span>
+    
+    <span class="c1"># Find the boundaries</span>
+    <span class="n">bw_boundaries</span> <span class="o">=</span> <span class="n">skimage</span><span class="o">.</span><span class="n">segmentation</span><span class="o">.</span><span class="n">find_boundaries</span><span class="p">(</span><span class="n">labs</span><span class="p">)</span>
+    
+    <span class="c1"># Expand labels by one pixel into the background to make boundaries thicker</span>
+    <span class="n">labs_max</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">maximum_filter</span><span class="p">(</span><span class="n">labs</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">labs</span><span class="p">[</span><span class="n">labs</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">labs_max</span><span class="p">[</span><span class="n">labs</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># Convert labels to RGB</span>
+    <span class="n">lab_rgb</span> <span class="o">=</span> <span class="n">label2rgb</span><span class="p">(</span><span class="n">labs</span><span class="p">)</span>
+
+    <span class="c1"># Ensure we have an RGB image</span>
+    <span class="n">im_rgb</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">im_rgb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">im_rgb</span><span class="p">,</span> <span class="n">im_rgb</span><span class="p">,</span> <span class="n">im_rgb</span><span class="p">))</span>
+    
+    <span class="c1"># Ensure range 0-1</span>
+    <span class="k">if</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">:</span>
+        <span class="n">im_rgb</span> <span class="o">=</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
+        
+    <span class="c1"># Update each contour</span>
+    <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">im_temp</span> <span class="o">=</span> <span class="n">im_rgb</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">ii</span><span class="p">]</span>
+        <span class="n">lab_temp</span> <span class="o">=</span> <span class="n">lab_rgb</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">ii</span><span class="p">]</span>
+        <span class="n">im_temp</span><span class="p">[</span><span class="n">bw_boundaries</span><span class="p">]</span> <span class="o">=</span> <span class="n">lab_temp</span><span class="p">[</span><span class="n">bw_boundaries</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">im_rgb</span>
+    
+
+<span class="c1"># Show the image</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span>
+<span class="n">show_images</span><span class="p">({</span><span class="s1">&#39;Detail from OS-2.ndpi&#39;</span><span class="p">:</span> <span class="n">im</span><span class="p">},</span> <span class="n">figheight</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_1_0.png" src="_images/intro_1_0.png" />
+</div>
+</div>
+<div class="section" id="digital-image-fundamentals">
+<h2>Digital image fundamentals<a class="headerlink" href="#digital-image-fundamentals" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="digital-image">
+<h3>Digital image<a class="headerlink" href="#digital-image" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>digital image</strong> is essentially an array of numbers, where each number corresponds to a <strong>pixel</strong> (from <strong>pic</strong>ture <strong>el</strong>ement).</p>
+<p>The pixels are visualized using a colour defined in a <strong>lookup table</strong> (sometimes referred to as a <strong>colormap</strong>).</p>
+<p>Often, the lookup table simply uses shades of gray with black matching the lowest values and white matching the highest values.
+However, different lookup tables can be used to visualize the same pixel values, thereby giving a different appearance to the image while keeping the raw data unchanged.</p>
+<div class="section" id="example">
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<p>A small digital image, expanded to display pixel values using a standard ‘grayscale’ lookup table (top) and the ‘viridis’ lookup table (bottom).</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a grayscale image</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)[:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:</span><span class="mi">200</span><span class="p">]</span>
+
+<span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="kn">import</span> <span class="n">LinearSegmentedColormap</span>
+<span class="k">for</span> <span class="n">cmap</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">LinearSegmentedColormap</span><span class="o">.</span><span class="n">from_list</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)])]:</span>
+
+    <span class="c1"># Select a detailed region to enlarge</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="p">(</span><span class="mi">92</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+    <span class="n">im_detail</span> <span class="o">=</span> <span class="n">im</span><span class="p">[</span><span class="n">y</span><span class="p">:</span><span class="n">y</span><span class="o">+</span><span class="n">height</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">+</span><span class="n">width</span><span class="p">]</span>
+
+    <span class="c1"># Show the image, the enlarged region, and the pixel values superimposed on the enlarged region</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.patches</span> <span class="k">as</span> <span class="nn">patches</span>
+    <span class="n">rect</span> <span class="o">=</span> <span class="n">patches</span><span class="o">.</span><span class="n">Rectangle</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;(A) Original image&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span><span class="n">rect</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im_detail</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;(B) Enlarged view from (A)&#39;</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im_detail</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;(C) Pixel values from (B)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">),</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">ndenumerate</span><span class="p">(</span><span class="n">im_detail</span><span class="p">):</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">),</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">})</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_3_0.png" src="_images/intro_3_0.png" />
+<img alt="_images/intro_3_1.png" src="_images/intro_3_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="rgb-image">
+<h3>RGB image<a class="headerlink" href="#rgb-image" title="Permalink to this headline">¶</a></h3>
+<p>An <strong>RGB image</strong> is a digital image in which three values are associated with each pixel: one each for <strong>red</strong>, <strong>green</strong>, and <strong>blue</strong>.</p>
+<p>These colours are added together to give the final colour used to display the pixel.</p>
+<div class="section" id="id1">
+<h4>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>An RGB image split to give three separate images, corresponding to the red, green and blue channels respectively.
+Each separated channel is shown with a lookup table that matches the corresponding colour.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define the red, green and blue colors</span>
+<span class="n">RED</span>   <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">GREEN</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">BLUE</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Strip out the red, green &amp; blue channels and apply the</span>
+<span class="n">im_red</span> <span class="o">=</span> <span class="n">colorize</span><span class="p">(</span><span class="n">im</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">RED</span><span class="p">)</span>
+<span class="n">im_green</span> <span class="o">=</span> <span class="n">colorize</span><span class="p">(</span><span class="n">im</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">GREEN</span><span class="p">)</span>
+<span class="n">im_blue</span> <span class="o">=</span> <span class="n">colorize</span><span class="p">(</span><span class="n">im</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">BLUE</span><span class="p">)</span>
+
+<span class="c1"># Add the RGB images together (we&#39;ll get what we started with)</span>
+<span class="n">im_rgb</span> <span class="o">=</span> <span class="n">im_red</span> <span class="o">+</span> <span class="n">im_green</span> <span class="o">+</span> <span class="n">im_blue</span>
+
+<span class="c1"># Show the RGB image alongside colorized versions of each channel</span>
+<span class="n">show_images</span><span class="p">(</span>
+    <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">RGB</span><span class="o">=</span><span class="n">im_rgb</span><span class="p">,</span>
+        <span class="n">Red</span><span class="o">=</span><span class="n">im_red</span><span class="p">,</span>
+        <span class="n">Green</span><span class="o">=</span><span class="n">im_green</span><span class="p">,</span>
+        <span class="n">Blue</span><span class="o">=</span><span class="n">im_blue</span><span class="p">,</span>
+        <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_5_0.png" src="_images/intro_5_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="single-channel-image">
+<h3>Single-channel image<a class="headerlink" href="#single-channel-image" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>single-channel image</strong> is one in which each pixel just has a single value.</p>
+<p>It is common to convert an RGB image (three channels) into a single-channel image during processing.
+There are many ways to do this, e.g.</p>
+<ul class="simple">
+<li><p>Simply select one of the RGB values (i.e. extract a single channel, as shown above)</p></li>
+<li><p>Compute a simple average (mean) of the RGB values</p></li>
+<li><p>Compute a weighted average of the RGB values</p></li>
+</ul>
+<blockquote>
+<div><p>A justification often given for using a weighted mean is that human perception does not afford equal weights to all the colours.</p>
+</div></blockquote>
+<div class="section" id="id2">
+<h4>Example<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Visualizing an RGB image converted to single-channel by averaging RGB values.
+The mean and weighted mean images look similar, but subtracting corresponding pixels reveals that the values are not identical.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read the image</span>
+<span class="c1"># For comparison with skimage output, first rescale to the range 0-1</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
+
+<span class="c1"># Compute the mean of RGB values</span>
+<span class="n">im_mean</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Use scikit-image for weighted conversion</span>
+<span class="c1"># See https://scikit-image.org/docs/dev/auto_examples/color_exposure/plot_rgb_to_gray.html</span>
+<span class="n">im_weighted</span> <span class="o">=</span> <span class="n">skimage</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">rgb2gray</span><span class="p">(</span><span class="n">im</span><span class="p">)</span>
+
+<span class="c1"># Show results and the difference</span>
+<span class="n">show_images</span><span class="p">(</span>
+    <span class="p">{</span><span class="s1">&#39;RGB&#39;</span><span class="p">:</span> <span class="n">im</span><span class="p">,</span> <span class="s1">&#39;RGB mean&#39;</span><span class="p">:</span> <span class="n">im_mean</span><span class="p">,</span> <span class="s1">&#39;Weighted mean&#39;</span><span class="p">:</span> <span class="n">im_weighted</span><span class="p">,</span> <span class="s1">&#39;Difference&#39;</span><span class="p">:</span> <span class="n">im_mean</span> <span class="o">-</span> <span class="n">im_weighted</span><span class="p">},</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_7_0.png" src="_images/intro_7_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="colour-deconvolution">
+<h3>Colour deconvolution<a class="headerlink" href="#colour-deconvolution" title="Permalink to this headline">¶</a></h3>
+<p><strong>Colour deconvolution</strong> is a method of digital stain separation, first published by A. C. Ruifrok and D. A. Johnston <a class="footnote-reference brackets" href="#fn-1" id="id3">1</a>, that is commonly used in digital pathology to split an RGB image into up to three single-channel images based upon stain colour.</p>
+<p>Colour deconvolution is calculated using <strong>stain vectors</strong>.
+Each stain vector comprises 3 numbers, which relate to the RGB values that characterise the colour of a single stain in the image.
+These values are normalized to be independent of stain intensity.</p>
+<blockquote>
+<div><p>Note that colour deconvolution is not the only approach to stain separation in digital pathology.
+While relatively straightforward to apply and practically very useful, colour deconvolution often produces ‘impossible’ results (e.g. imperfect images or stain vectors can result in negative stain values), which must be taking into consideration for any quantification.</p>
+</div></blockquote>
+<div class="section" id="id4">
+<h4>Example<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Stain separation using colour deconvolution.
+Here, default stain vectors for hematoxylin (blue) and DAB (brown) are used with the colour deconvolution implementation found in scikit-image.</p>
+<p>This already gives a subjectively reasonable separation of the blue and brown pixels.
+The separation could nevertheless be improved by using stain vectors derived from the pixel values of the image itself.
+Note also that the strongly positive (brown) pixels also have higher values in the ‘hematoxylin’ image.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span>
+
+<span class="c1"># Use the default stain vectors and implementation from scikit-image</span>
+<span class="c1"># Note that this is not at all optimal for the current image!</span>
+<span class="n">im_deconv</span> <span class="o">=</span> <span class="n">skimage</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">separate_stains</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">skimage</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">hdx_from_rgb</span><span class="p">)</span>
+
+<span class="n">im_hematoxylin</span> <span class="o">=</span> <span class="n">im_deconv</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">im_dab</span> <span class="o">=</span> <span class="n">im_deconv</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="n">show_images</span><span class="p">(</span>
+    <span class="p">{</span><span class="s1">&#39;RGB&#39;</span><span class="p">:</span> <span class="n">im</span><span class="p">,</span>
+     <span class="s1">&#39;Hematoxylin&#39;</span><span class="p">:</span> <span class="n">rescale_percentiles</span><span class="p">(</span><span class="n">im_hematoxylin</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+     <span class="s1">&#39;DAB&#39;</span><span class="p">:</span> <span class="n">rescale_percentiles</span><span class="p">(</span><span class="n">im_dab</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">},</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_9_0.png" src="_images/intro_9_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="multichannel-image">
+<h3>Multichannel image<a class="headerlink" href="#multichannel-image" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>multichannel image</strong> is similar to an RGB image, except that it may have any number of channels - which are not necessarily viewed using red, green and blue lookup tables.</p>
+<p>Multichannel images have been common in fluorescence microscopy for a long time.
+Techniques such as <em>imaging mass cytometry</em> can routinely generate multichannel images with &gt;40 channels.</p>
+<div class="section" id="id5">
+<h4>Example<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>Illustration of a multichannel image with two channels.
+Here, the channels are simply those generated previously by colour deconvolution - but assigned different lookup tables for visualization.</p>
+<blockquote>
+<div><p>Note that merging the colour deconvolved channels in this way does not produce the original RGB image.</p>
+</div></blockquote>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert to an RGB version so we can visualize the result</span>
+<span class="n">im_h_color</span> <span class="o">=</span> <span class="n">colorize</span><span class="p">(</span><span class="n">rescale_percentiles</span><span class="p">(</span><span class="n">im_hematoxylin</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">im_dab_color</span> <span class="o">=</span> <span class="n">colorize</span><span class="p">(</span><span class="n">rescale_percentiles</span><span class="p">(</span><span class="n">im_dab</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">])</span>
+
+<span class="n">show_images</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s1">&#39;Merged multichannel&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">im_h_color</span> <span class="o">+</span> <span class="n">im_dab_color</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="s1">&#39;Hematoxylin channel&#39;</span><span class="p">:</span> <span class="n">im_h_color</span><span class="p">,</span>
+        <span class="s1">&#39;DAB channel&#39;</span><span class="p">:</span> <span class="n">im_dab_color</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_11_0.png" src="_images/intro_11_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="binary-image">
+<h3>Binary image<a class="headerlink" href="#binary-image" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>binary image</strong> contains pixels with at most two different values, typically corresponding to <strong>background</strong> and <strong>foreground</strong>.</p>
+<p>Binary images are often generated in an image processing workflow when detecting <strong>objects</strong>, i.e. structures of interest within the image.</p>
+<div class="section" id="id6">
+<h4>Example<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p>Three different binary images, derived by applying a <strong>threshold</strong> to the same input image.
+Pixels with values above the threshold are classified as foreground (white) and pixels less than or equal to the threshold are classified as background (black).</p>
+<p>The choice of threshold has a substantial impact upon the size, shape and number of objects detected.
+Note also that a threshold alone does not do a good job of detecting nuclei here: more processing operations are needed.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extract a small detail from the original &amp; colour deconvolved images</span>
+<span class="n">im_detail</span> <span class="o">=</span> <span class="n">im</span><span class="p">[:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:</span><span class="mi">200</span><span class="p">]</span>
+<span class="n">im_h_detail</span> <span class="o">=</span> <span class="n">im_hematoxylin</span><span class="p">[:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:</span><span class="mi">200</span><span class="p">]</span>
+<span class="n">im_dab_detail</span> <span class="o">=</span> <span class="n">im_dab</span><span class="p">[:</span><span class="mi">200</span><span class="p">,</span> <span class="p">:</span><span class="mi">200</span><span class="p">]</span>
+
+<span class="c1"># Create a dict of thresholded images (plus the original first)</span>
+<span class="n">thresholded_images</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="sa">f</span><span class="s1">&#39;Hematoxylin detail&#39;</span><span class="p">:</span> <span class="n">rescale_percentiles</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="sa">f</span><span class="s1">&#39;Thresholded &gt; mean (</span><span class="si">{</span><span class="n">im_hematoxylin</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s1">.2</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">:</span> <span class="n">im_h_detail</span> <span class="o">&gt;</span> <span class="n">im_hematoxylin</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+    <span class="s1">&#39;Thresholded &gt; 0.05&#39;</span><span class="p">:</span> <span class="n">im_h_detail</span> <span class="o">&gt;</span> <span class="mf">0.05</span><span class="p">,</span>
+    <span class="s1">&#39;Thresholded &gt; 0.1&#39;</span><span class="p">:</span> <span class="n">im_h_detail</span> <span class="o">&gt;</span> <span class="mf">0.1</span>
+<span class="p">}</span>
+
+<span class="n">show_images</span><span class="p">(</span><span class="n">thresholded_images</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_13_0.png" src="_images/intro_13_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="labelled-image">
+<h3>Labelled image<a class="headerlink" href="#labelled-image" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>labelled image</strong> is similar to a binary image, except that distinct <em>foreground</em> objects each have their own unique integer label.
+This makes it possible to distinguish between different objects, not simply foreground and background.</p>
+<div class="section" id="id7">
+<h4>Example<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p>Three labelled images, derived from the binary images above.
+These are created by tracing <strong>connected components</strong> within the binary image, i.e. connected groups of foreground pixels.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Take thresholded images from before, and label the objects</span>
+<span class="n">labelled_images</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">im</span> <span class="ow">in</span> <span class="n">thresholded_images</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">im</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="n">labelled_images</span><span class="p">[</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; labels&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">label2rgb</span><span class="p">(</span><span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">im</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">labelled_images</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">im</span>
+
+<span class="n">show_images</span><span class="p">(</span><span class="n">labelled_images</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_15_0.png" src="_images/intro_15_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="region-of-interest">
+<h3>Region of interest<a class="headerlink" href="#region-of-interest" title="Permalink to this headline">¶</a></h3>
+<p><strong>Regions of interest (ROIs)</strong> provide an alternative to labelled images as a way to represent objects, or to define areas of interest that do not necessarily correspond to any particular structure (e.g. a region within which analysis should be applied).</p>
+<blockquote>
+<div><p>ROIs are often represented as polygons, although this depends upon the software being used.
+There is not always a clear distinction between a ROI and an object, and a ROI may also be represented using a binary or labelled image.</p>
+</div></blockquote>
+<div class="section" id="id8">
+<h4>Example<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<p>Generating region of interest polygons from the labelled images above, to visualize detected objects more clearly on top of the original image.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">roi_images</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">im</span> <span class="ow">in</span> <span class="n">thresholded_images</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">im</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="n">roi_images</span><span class="p">[</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39; labels&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mark_rois</span><span class="p">(</span><span class="n">rescale_percentiles</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">im</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">roi_images</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">im</span>
+
+<span class="n">show_images</span><span class="p">(</span><span class="n">roi_images</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_17_0.png" src="_images/intro_17_0.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="image-filters">
+<h2>Image filters<a class="headerlink" href="#image-filters" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="linear-filters">
+<h3>Linear filters<a class="headerlink" href="#linear-filters" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>linear filter</strong> replaces every pixel values in an image by a <strong>weighted sum</strong> of the surrounding pixel values.</p>
+<p>Applying a linear filter is often called <strong>convolution</strong> and the weights are defined using a <strong>convolution kernel</strong>.</p>
+<div class="section" id="id9">
+<h4>Example<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>The result of applying three different 3x3 convolution kernels are shown:</p>
+<ul class="simple">
+<li><p><strong>3x3 Mean</strong> - calculates the mean of each pixel and its immediate neighbors; used for smoothing</p></li>
+<li><p><strong>3x3 Sobel</strong> - approximates a vertical gradient; used to enhance horizontal edges</p></li>
+<li><p><strong>3x3 Laplacian</strong> - approximates a second derivative; used to enhance spots and edges</p></li>
+</ul>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define three convolution kernels</span>
+<span class="n">kernel_mean3x3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span> <span class="o">/</span> <span class="mf">9.0</span>
+<span class="n">kernel_sobel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">kernel_laplacian</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+
+<span class="n">kernels</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;3x3 Mean filter&#39;</span><span class="p">:</span> <span class="n">kernel_mean3x3</span><span class="p">,</span>
+    <span class="s1">&#39;3x3 Sobel filter&#39;</span><span class="p">:</span> <span class="n">kernel_sobel</span><span class="p">,</span>
+    <span class="s1">&#39;3x3 Laplacian filter&#39;</span><span class="p">:</span> <span class="n">kernel_laplacian</span>    
+<span class="p">}</span>
+
+<span class="c1"># Plot images with kernels below</span>
+<span class="n">col</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">n_rows</span> <span class="o">=</span> <span class="mi">2</span>
+
+<span class="n">n_cols</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">kernels</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">n_cols</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Original image&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+            
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">kernel</span> <span class="ow">in</span> <span class="n">kernels</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">col</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">n_cols</span><span class="p">,</span> <span class="n">col</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">im_filtered</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">convolve</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="n">kernel</span><span class="p">)</span>
+    <span class="n">vmin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">im_filtered</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">vmax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">im_filtered</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im_filtered</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="n">vmin</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">n_cols</span><span class="p">,</span> <span class="n">n_cols</span><span class="o">+</span><span class="n">col</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">kernel</span><span class="o">.</span><span class="n">shape</span><span class="p">),</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[])</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">),</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">ndenumerate</span><span class="p">(</span><span class="n">kernel</span><span class="p">):</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span>
+        <span class="k">if</span> <span class="n">kernel</span> <span class="ow">is</span> <span class="n">kernel_mean3x3</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s1">&#39;1/9&#39;</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">),</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">kernel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_19_0.png" src="_images/intro_19_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="gaussian-filters">
+<h3>Gaussian filters<a class="headerlink" href="#gaussian-filters" title="Permalink to this headline">¶</a></h3>
+<p><strong>Gaussian filters</strong> are an especially important example of linear filters.</p>
+<p>The kernel for a Gaussian filter is derived from a <strong>Gaussian function</strong>, and the filter size is controlled by a <span class="math notranslate nohighlight">\(\sigma\)</span> value (a larger <span class="math notranslate nohighlight">\(\sigma\)</span> results in more smoothing).
+It effectively replaces each pixel by a weighted average of the surrounding pixel values, with nearby pixels weighted more heavily.</p>
+<div class="section" id="id10">
+<h4>Example<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<p>Applying Gaussian filters with increasing <span class="math notranslate nohighlight">\(\sigma\)</span> values to an image.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Take thresholded images from before, and label the objects</span>
+<span class="n">show_images</span><span class="p">({</span>
+        <span class="s1">&#39;Hematoxylin detail&#39;</span><span class="p">:</span> <span class="n">im_h_detail</span><span class="p">,</span>
+        <span class="s1">&#39;Gaussian filtered (sigma=1)&#39;</span><span class="p">:</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+        <span class="s1">&#39;Gaussian filtered (sigma=2)&#39;</span><span class="p">:</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="s1">&#39;Gaussian filtered (sigma=4)&#39;</span><span class="p">:</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="p">},</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_21_0.png" src="_images/intro_21_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="non-linear-filters">
+<h3>Non-linear filters<a class="headerlink" href="#non-linear-filters" title="Permalink to this headline">¶</a></h3>
+<p><strong>Non-linear filters</strong> replace each pixel value based upon some calculation <em>other</em> than a weighted sum.</p>
+</div>
+<div class="section" id="rank-filters">
+<h3>Rank filters<a class="headerlink" href="#rank-filters" title="Permalink to this headline">¶</a></h3>
+<p>Perhaps the most common non-linear filters for image processing are the <strong>rank filters</strong>.</p>
+<p>These effectively rank the pixels within an <em>n x n</em> neighbourhood according to value, and then select one of the values as output depending upon the filter type - usually the <strong>median</strong>, <strong>minimum</strong> or <strong>maximum</strong>.</p>
+<div class="section" id="id11">
+<h4>Example<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p>Applying three different rank filters to an input image.
+Each output pixel is determined from a 9x9 square neighbourhood centred on the corresponding input pixel.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">show_images</span><span class="p">({</span>
+        <span class="s1">&#39;Hematoxylin detail&#39;</span><span class="p">:</span> <span class="n">im_h_detail</span><span class="p">,</span>
+        <span class="s1">&#39;9x9 median filter&#39;</span><span class="p">:</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">median_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="mi">9</span><span class="p">),</span>
+        <span class="s1">&#39;9x9 maximum filter&#39;</span><span class="p">:</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">maximum_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="mi">9</span><span class="p">),</span>
+        <span class="s1">&#39;9x9 minimum filter&#39;</span><span class="p">:</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">minimum_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="mi">9</span><span class="p">)</span>
+    <span class="p">},</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_23_0.png" src="_images/intro_23_0.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="image-transforms">
+<h2>Image transforms<a class="headerlink" href="#image-transforms" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="distance-transform">
+<h3>Distance transform<a class="headerlink" href="#distance-transform" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>distance transform</strong> is applied to a binary image.
+It generates a <strong>distance map</strong>, in which each pixel value represents the distance to the nearest background pixel in the original binary image.</p>
+<p>This results in higher values towards the centre of structures, and smaller values towards the boundary.</p>
+<div class="section" id="id12">
+<h4>Example<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<p>The distance transform of a binary image, which had been generated by thresholding an image after Gaussian filtering.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im_smoothed</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">bw</span> <span class="o">=</span> <span class="n">im_smoothed</span> <span class="o">&gt;</span> <span class="n">im_smoothed</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">bw_dist</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">distance_transform_edt</span><span class="p">(</span><span class="n">bw</span><span class="p">)</span>
+
+<span class="n">show_images</span><span class="p">({</span>
+    <span class="s1">&#39;Gaussian-smoothed image&#39;</span><span class="p">:</span> <span class="n">im_smoothed</span><span class="p">,</span>
+    <span class="s1">&#39;Thresholded image&#39;</span><span class="p">:</span> <span class="n">bw</span><span class="p">,</span>
+    <span class="s1">&#39;Distance transform&#39;</span><span class="p">:</span> <span class="n">bw_dist</span>
+    <span class="p">},</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_25_0.png" src="_images/intro_25_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="watershed-transform">
+<h3>Watershed transform<a class="headerlink" href="#watershed-transform" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>watershed transform</strong> is a region-growing transform that can be used to separate objects.</p>
+<p>If the watershed transform is applied to a distance map generated from a binary image, it can be useful to split ‘roundish’ structures that were merged in the binary image.</p>
+<p>In this case, a labelled image is first created containing seed labels - which correspond to pixels with high distance values, i.e. they occur towards object centres.
+These seeds are progressively expanded, until they reach either the background or a nearby expanding labels.</p>
+<div class="section" id="id13">
+<h4>Example<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p>A watershed transform is applied to the output for the distance transform applied previously.
+Note that some (although not all) of the connected components in the binary image could be separated using this approach.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im_seeds</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">bw_dist</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">bw_seeds</span> <span class="o">=</span> <span class="n">bw_dist</span> <span class="o">&gt;</span> <span class="mi">5</span>
+<span class="n">im_seeds</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">bw_seeds</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">im_watershed</span> <span class="o">=</span> <span class="n">skimage</span><span class="o">.</span><span class="n">segmentation</span><span class="o">.</span><span class="n">watershed</span><span class="p">(</span><span class="o">-</span><span class="n">bw_dist</span><span class="p">,</span> <span class="n">im_seeds</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">bw_dist</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">show_images</span><span class="p">({</span>
+    <span class="s1">&#39;Hematoxylin detail&#39;</span><span class="p">:</span> <span class="n">im_h_detail</span><span class="p">,</span>
+    <span class="s1">&#39;Distance transform&#39;</span><span class="p">:</span> <span class="n">bw_dist</span><span class="p">,</span>
+    <span class="s1">&#39;Watershed seeds&#39;</span><span class="p">:</span> <span class="n">label2rgb</span><span class="p">(</span><span class="n">im_seeds</span><span class="p">),</span>
+    <span class="s1">&#39;Watershed output&#39;</span><span class="p">:</span> <span class="n">label2rgb</span><span class="p">(</span><span class="n">im_watershed</span><span class="p">)</span>
+    <span class="p">},</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_27_0.png" src="_images/intro_27_0.png" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="composing-workflows">
+<h2>Composing workflows<a class="headerlink" href="#composing-workflows" title="Permalink to this headline">¶</a></h2>
+<p>Equipped with these core tools, it is already possible to assemble image processing <strong>workflows</strong> (i.e. <strong>algorithms</strong>) for specific purposes.</p>
+<p>For example, a simple workflow to detect nuclei might include:</p>
+<ul class="simple">
+<li><p>Convert the RGB image to have a single channel</p>
+<ul>
+<li><p>e.g. by taking the mean of RGB values</p></li>
+</ul>
+</li>
+<li><p>Smooth the image</p>
+<ul>
+<li><p>e.g. by applying a small Gaussian filter, with <span class="math notranslate nohighlight">\(\sigma\)</span> = 1</p></li>
+</ul>
+</li>
+<li><p>Threshold the image</p>
+<ul>
+<li><p>e.g. using its mean value as a threshold</p></li>
+</ul>
+</li>
+<li><p>Convert binary regions to ROIs for visualization</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span>
+
+<span class="c1"># Convert to grayscale (mean RGB channels)</span>
+<span class="n">im_g</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Smooth with a small Gaussian filter</span>
+<span class="n">im_g</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">im_g</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Threshold (here, we just use the mean... but could use something else)</span>
+<span class="n">bw</span> <span class="o">=</span> <span class="n">im_g</span> <span class="o">&lt;</span> <span class="n">im_g</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">show_images</span><span class="p">({</span>
+    <span class="s1">&#39;Original&#39;</span><span class="p">:</span> <span class="n">im</span><span class="p">,</span>
+    <span class="s1">&#39;Smoothed single-channel&#39;</span><span class="p">:</span> <span class="n">im_g</span><span class="p">,</span>
+    <span class="s1">&#39;Thresholded&#39;</span><span class="p">:</span> <span class="n">bw</span><span class="p">,</span>
+    <span class="s1">&#39;ROIs&#39;</span><span class="p">:</span> <span class="n">mark_rois</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">bw</span><span class="p">)</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_30_0.png" src="_images/intro_30_0.png" />
+</div>
+</div>
+<p>Even here, we could vary three different things, potentially getting different results:</p>
+<ul class="simple">
+<li><p>the method of converting to a single channel</p></li>
+<li><p>the method of smoothing</p></li>
+<li><p>the threshold value</p></li>
+</ul>
+<p>However, in practice, simple workflows like this tend to only give reasonable-looking results on a few images and/or when viewed at a low magnification.
+Errors are evident when viewed at a higher resolution, indicating that much more sophisticated workflows with required - generally with many more adjustable parameters.</p>
+<div class="cell tag_hide-input docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im</span> <span class="o">=</span> <span class="n">im_detail</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Convert to grayscale (mean RGB channels)</span>
+<span class="n">im_g</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Smooth with a small Gaussian filter</span>
+<span class="n">im_g</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">gaussian_filter</span><span class="p">(</span><span class="n">im_g</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Threshold (here, we just use the mean... but could use something else)</span>
+<span class="n">bw</span> <span class="o">=</span> <span class="n">im_g</span> <span class="o">&lt;</span> <span class="n">im_g</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+
+<span class="n">show_images</span><span class="p">({</span>
+    <span class="s1">&#39;Original&#39;</span><span class="p">:</span> <span class="n">im</span><span class="p">,</span>
+    <span class="s1">&#39;Smoothed single-channel&#39;</span><span class="p">:</span> <span class="n">im_g</span><span class="p">,</span>
+    <span class="s1">&#39;Thresholded&#39;</span><span class="p">:</span> <span class="n">bw</span><span class="p">,</span>
+    <span class="s1">&#39;ROIs&#39;</span><span class="p">:</span> <span class="n">mark_rois</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">bw</span><span class="p">)</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/intro_32_0.png" src="_images/intro_32_0.png" />
+</div>
+</div>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="fn-1"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>Ruifrok AC, Johnston DA. Quantification of histochemical staining by color deconvolution. Anal Quant Cytol Histol. 2001 Aug;23(4):291-9. PMID: 11531144.</p>
+</dd>
+</dl>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Pete Bankhead<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
