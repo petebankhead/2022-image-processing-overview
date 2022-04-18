@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image processing glossary &#8212; Image Processing Glossary</title>
+    <title>Image Processing Overview &#8212; Image Processing Glossary</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -86,7 +86,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 current">
   <a class="reference internal" href="#">
-   Image processing glossary
+   Image Processing Overview
   </a>
  </li>
 </ul>
@@ -170,7 +170,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/petebankhead/image-processing-glossary/main?urlpath=tree/./intro.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/petebankhead/image-processing-glossary/main?urlpath=tree/intro.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -389,7 +389,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Image processing glossary</h1>
+                <h1>Image Processing Overview</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -595,11 +595,11 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="image-processing-glossary">
-<h1>Image processing glossary<a class="headerlink" href="#image-processing-glossary" title="Permalink to this headline">¶</a></h1>
-<p>This is a (very) brief glossary of key image processing terms for pathologists interested in digital pathology.</p>
-<p>Here, I have used <a class="reference external" href="https://numpy.org">NumPy</a>, <a class="reference external" href="https://scipy.org">SciPy</a> and <a class="reference external" href="https://scikit-image.org">scikit-image</a> for image processing and <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> for the overall layout.
-The <span class="guilabel">Click to show</span> buttons can be used to view the original Python code used to generate each image.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="image-processing-overview">
+<h1>Image Processing Overview<a class="headerlink" href="#image-processing-overview" title="Permalink to this headline">¶</a></h1>
+<p>This is a (very) brief overview of key image processing terms for pathologists interested in digital pathology.</p>
+<p>Here, I have used <a class="reference external" href="https://numpy.org">NumPy</a>, <a class="reference external" href="https://scipy.org">SciPy</a> and <a class="reference external" href="https://scikit-image.org">scikit-image</a> for image processing.
+Thanks to <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>, the <span class="guilabel">Click to show</span> buttons can be used to view the original Python code used to generate each image.</p>
 <blockquote>
 <div><p>The example Ki67 image is extracted from OS-2.ndpi.
 The original whole slide image is part of the OpenSlide freely-distributed data (<a class="reference external" href="https://openslide.org">https://openslide.org</a>).</p>
@@ -660,7 +660,7 @@ The original whole slide image is part of the OpenSlide freely-distributed data 
     <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">do_plot</span><span class="p">:</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-    
+
 
 <span class="k">def</span> <span class="nf">label2rgb</span><span class="p">(</span><span class="n">labs</span><span class="p">,</span> <span class="n">random_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -672,20 +672,20 @@ The original whole slide image is part of the OpenSlide freely-distributed data 
     <span class="k">else</span><span class="p">:</span>
         <span class="n">colors</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="k">return</span> <span class="n">skimage</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">label2rgb</span><span class="p">(</span><span class="n">labs</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    
-    
+
+
 <span class="k">def</span> <span class="nf">mark_rois</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">labs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Helper function to mark ROIs on top of an image using the provided labels.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    
+
     <span class="c1"># If we have a binary image, label it first</span>
     <span class="k">if</span> <span class="n">labs</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">bool</span><span class="p">:</span>
         <span class="n">labs</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">labs</span><span class="p">)</span>
-    
+
     <span class="c1"># Find the boundaries</span>
     <span class="n">bw_boundaries</span> <span class="o">=</span> <span class="n">skimage</span><span class="o">.</span><span class="n">segmentation</span><span class="o">.</span><span class="n">find_boundaries</span><span class="p">(</span><span class="n">labs</span><span class="p">)</span>
-    
+
     <span class="c1"># Expand labels by one pixel into the background to make boundaries thicker</span>
     <span class="n">labs_max</span> <span class="o">=</span> <span class="n">ndimage</span><span class="o">.</span><span class="n">maximum_filter</span><span class="p">(</span><span class="n">labs</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
     <span class="n">labs</span><span class="p">[</span><span class="n">labs</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">labs_max</span><span class="p">[</span><span class="n">labs</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
@@ -697,18 +697,18 @@ The original whole slide image is part of the OpenSlide freely-distributed data 
     <span class="n">im_rgb</span> <span class="o">=</span> <span class="n">im</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">im_rgb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dstack</span><span class="p">((</span><span class="n">im_rgb</span><span class="p">,</span> <span class="n">im_rgb</span><span class="p">,</span> <span class="n">im_rgb</span><span class="p">))</span>
-    
+
     <span class="c1"># Ensure range 0-1</span>
     <span class="k">if</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">:</span>
         <span class="n">im_rgb</span> <span class="o">=</span> <span class="n">im_rgb</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span> <span class="o">/</span> <span class="mf">255.0</span>
-        
+
     <span class="c1"># Update each contour</span>
     <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
         <span class="n">im_temp</span> <span class="o">=</span> <span class="n">im_rgb</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">ii</span><span class="p">]</span>
         <span class="n">lab_temp</span> <span class="o">=</span> <span class="n">lab_rgb</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">ii</span><span class="p">]</span>
         <span class="n">im_temp</span><span class="p">[</span><span class="n">bw_boundaries</span><span class="p">]</span> <span class="o">=</span> <span class="n">lab_temp</span><span class="p">[</span><span class="n">bw_boundaries</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">im_rgb</span>
-    
+
 
 <span class="c1"># Show the image</span>
 <span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span>
@@ -1073,7 +1073,7 @@ There is not always a clear distinction between a ROI and an object, and a ROI m
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">im_h_detail</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Original image&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
-            
+
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">kernel</span> <span class="ow">in</span> <span class="n">kernels</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="n">col</span> <span class="o">+=</span> <span class="mi">1</span>
 
@@ -1251,7 +1251,7 @@ Note that some (although not all) of the connected components in the binary imag
 </li>
 <li><p>Convert binary regions to ROIs for visualization</p></li>
 </ul>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">im</span> <span class="o">=</span> <span class="n">imread</span><span class="p">(</span><span class="s1">&#39;OS-2-ndpi-detail.png&#39;</span><span class="p">)</span>
 

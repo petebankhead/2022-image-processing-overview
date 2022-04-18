@@ -12,12 +12,12 @@ kernelspec:
   name: python3
 ---
 
-# Image processing glossary
+# Image Processing Overview
 
-This is a (very) brief glossary of key image processing terms for pathologists interested in digital pathology.
+This is a (very) brief overview of key image processing terms for pathologists interested in digital pathology.
 
-Here, I have used [NumPy](https://numpy.org), [SciPy](https://scipy.org) and [scikit-image](https://scikit-image.org) for image processing and [Jupyter Book](https://jupyterbook.org) for the overall layout.
-The {guilabel}`Click to show` buttons can be used to view the original Python code used to generate each image.
+Here, I have used [NumPy](https://numpy.org), [SciPy](https://scipy.org) and [scikit-image](https://scikit-image.org) for image processing.
+Thanks to [Jupyter Book](https://jupyterbook.org), the {guilabel}`Click to show` buttons can be used to view the original Python code used to generate each image.
 
 > The example Ki67 image is extracted from OS-2.ndpi.
 > The original whole slide image is part of the OpenSlide freely-distributed data (https://openslide.org).
@@ -79,7 +79,7 @@ def show_images(images, figheight=3, clip_percentile=None, cmap='gray', do_plot=
     plt.tight_layout()
     if do_plot:
         plt.show()
-    
+
 
 def label2rgb(labs, random_colors=False, **kwargs) -> np.ndarray:
     """
@@ -91,20 +91,20 @@ def label2rgb(labs, random_colors=False, **kwargs) -> np.ndarray:
     else:
         colors = None
     return skimage.color.label2rgb(labs, colors=colors, **kwargs)
-    
-    
+
+
 def mark_rois(im, labs) -> np.ndarray:
     """
     Helper function to mark ROIs on top of an image using the provided labels.
     """
-    
+
     # If we have a binary image, label it first
     if labs.dtype == bool:
         labs, n = ndimage.label(labs)
-    
+
     # Find the boundaries
     bw_boundaries = skimage.segmentation.find_boundaries(labs)
-    
+
     # Expand labels by one pixel into the background to make boundaries thicker
     labs_max = ndimage.maximum_filter(labs, 3)
     labs[labs == 0] = labs_max[labs == 0]
@@ -116,18 +116,18 @@ def mark_rois(im, labs) -> np.ndarray:
     im_rgb = im.copy()
     if im_rgb.ndim == 2 or im_rgb.shape[2] == 1:
         im_rgb = np.dstack((im_rgb, im_rgb, im_rgb))
-    
+
     # Ensure range 0-1
     if im_rgb.dtype == np.uint8:
         im_rgb = im_rgb.astype(np.float32) / 255.0
-        
+
     # Update each contour
     for ii in range(3):
         im_temp = im_rgb[:, :, ii]
         lab_temp = lab_rgb[:, :, ii]
         im_temp[bw_boundaries] = lab_temp[bw_boundaries]
     return im_rgb
-    
+
 
 # Show the image
 im = imread('OS-2-ndpi-detail.png')
@@ -462,7 +462,7 @@ plt.subplot(n_rows, n_cols, 1)
 plt.imshow(im_h_detail, cmap='gray')
 plt.title('Original image')
 plt.axis(False)
-            
+
 for name, kernel in kernels.items():
     col += 1
 
@@ -617,6 +617,8 @@ For example, a simple workflow to detect nuclei might include:
 * Convert binary regions to ROIs for visualization
 
 ```{code-cell} ipython3
+:tags: [hide-input]
+
 im = imread('OS-2-ndpi-detail.png')
 
 # Convert to grayscale (mean RGB channels)
