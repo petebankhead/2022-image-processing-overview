@@ -17,10 +17,13 @@ kernelspec:
 This is a (very) brief overview of key image processing terms for pathologists interested in digital pathology.
 
 Here, I have used [NumPy](https://numpy.org), [SciPy](https://scipy.org) and [scikit-image](https://scikit-image.org) for image processing.
+
 Thanks to [Jupyter Book](https://jupyterbook.org), the {guilabel}`Click to show` buttons can be used to view the original Python code used to generate each image.
 
 > The example Ki67 image is extracted from OS-2.ndpi.
 > The original whole slide image is part of the OpenSlide freely-distributed data (https://openslide.org).
+> 
+> You can find a more extensive introduction to bioimage analysis at https://bioimagebook.github.io/
 
 ```{code-cell} ipython3
 :tags: [hide-input]
