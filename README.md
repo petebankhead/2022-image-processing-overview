@@ -2,7 +2,7 @@
 
 A (very) brief overview of image processing terms for pathologists.
 
-See https://petebankhead.github.io/image-processing-overview/ for the 'live' version.
+See https://petebankhead.github.io/2022-image-processing-overview/ for the 'live' version.
 
 -------------
 
